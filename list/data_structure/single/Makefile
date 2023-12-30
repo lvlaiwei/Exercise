@@ -18,3 +18,4 @@ clean:
 	rm -rf *.o *.so *.a $(NAME_MODEL)
 
 .PHONY:$(NAME_MODEL)_bin $(NAME_MODEL)_lib clean
+
