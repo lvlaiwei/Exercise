@@ -78,6 +78,7 @@ void print_list(list_head *head)
 
     single_list *temp_list = head->list;
     while(temp_list){
+        // printf("num is %p\n", temp_list);
         printf("num is %d\n", temp_list->num);
         temp_list = temp_list->next;
     }
