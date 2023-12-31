@@ -78,6 +78,7 @@ void print_list(list_head *head)
 
     single_list *temp_list = head->list;
     while(temp_list){
+        // printf("num is %p\n", temp_list);
         printf("num is %d\n", temp_list->num);
         temp_list = temp_list->next;
     }
@@ -101,7 +102,7 @@ void free_all_list(list_head *head)
 
 }
 
-int main()
+int single_list_data(int argc, char *argv[])
 {
     list_head *head = init_head();
     
@@ -119,5 +120,5 @@ int main()
     print_list(head);
 
     free_all_list(head);
-    return 0;
+    exit(0);
 }
