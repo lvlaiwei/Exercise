@@ -101,7 +101,7 @@ void free_all_list(list_head *head)
 
 }
 
-int main()
+int single_list_data(int argc, char *argv[])
 {
     list_head *head = init_head();
     
@@ -119,5 +119,5 @@ int main()
     print_list(head);
 
     free_all_list(head);
-    return 0;
+    exit(0);
 }

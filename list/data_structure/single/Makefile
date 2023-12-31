@@ -11,7 +11,7 @@ BUILD_INCLUDE_DIR += ./include
 LINK_LIB_NAME += 
 LINK_LIB_DIR += 
 BUILD += $(addprefix -I, $(BUILD_INCLUDE_DIR)) 
-LINK += $(addprefix -L, $(LINK_LIB_DIR)) $(addprefix -l, $(LINK_LIB_NAME))
+LINK += $(addprefix -L, $(LINK_LIB_DIR)) $(addprefix -l, $(LINK_LIB_NAME)) -nostartfiles -e $(NAME_MODEL)
 
 define check_dir
 	test -d $(1) || mkdir -p $(1)
